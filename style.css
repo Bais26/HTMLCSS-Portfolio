@@ -248,7 +248,7 @@ html {
 /* End About Section  */
 
 /* Services section  */
-.services {
+/* .services {
 	flex-direction: column;
 	min-height: 60vh;
 	padding: 10rem 5rem;
@@ -345,6 +345,42 @@ html {
 }
 .services .services-info .service:nth-child(2) .service-card .service-front i {
 	color: white;
+} */
+/*Experience*/
+.experience{
+    background-color: rgba(0, 0, 0, 0.274);
+    border-radius: 12px;
+	padding: 10rem 5rem;
+}
+.experience-item{
+    padding: 10px;
+    border-left: 1px solid rgba(38, 26, 209, 0.2);
+}
+/* Readmore */
+#check{
+    display: none;
+}
+.content{
+    display: none;
+}
+label{
+    display: inline-block;
+    margin-top: 15px;
+    color: #000000;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 600;
+}
+#check:checked~ .content{
+    display: block;
+}
+#check:checked~ label{
+visibility: hidden;
+}
+#check:checked~ label:after{
+    content:'Show Less';
+    display: block;
+    visibility: visible;
 }
 /* End Services section  */
 
@@ -353,16 +389,16 @@ html {
 	min-height: 10vh;
 	flex-direction: column;
 	width: 100%;
-	background-color: #1B2430;
+	background-color: white;
 	padding: 3rem 2rem;
 }
 .hire .hire-heading {
-	color: white;
+	color: black;
 	font-size: 2.2rem;
 	text-align: center;
 }
 .hire .hire-button {
-	padding: 2rem 3rem;
+	padding: 1rem 1rem;
 	display: inline-block;
 	background-color: white;
 	font-size: 1.6rem;
@@ -385,12 +421,11 @@ html {
 	width: 100%;
 	background-color: #1B2430;
 	color: white;
-	flex-direction: column;
-	text-align: center;
-	padding: 5rem;
+	text-align: left;
+	padding: 32px;
 }
 .footer .footer-contact {
-	padding: 20px;
+	padding: 12px;
 }
 .footer .footer-contact .footer-contact-heading {
 	font-size: 2.5rem;
@@ -402,12 +437,6 @@ html {
 	font-size: 1.4rem;
 	padding-top: 10px;
 	letter-spacing: .2rem;
-}
-.footer .footer-social-follow .footer-social-icon a {
-	color: white;
-	font-size: 3rem;
-	margin: .4rem;
-	display: inline-block;
 }
 /* End Footer section  */
 

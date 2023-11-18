@@ -182,6 +182,11 @@ html {
 	line-height: 1.8rem;
 	text-align: justify;
 }
+.about .about-info .about-desc {
+	font-size: 2rem;
+	line-height: 2.5rem;
+	text-align: start;
+}
 .about .about-img {
 	margin-top: 50px;
 	display: block;
@@ -279,15 +284,11 @@ html {
 .services .services-info .service .service-card .service-back {
 	transform: rotateY(180deg);
 }
-.services .services-info .service .service-card .service-front i {
-	font-size: 4rem;
-	color: black;
-	margin-bottom: 10px;
-}
 .services .services-info .service .service-card .service-front .service-front-heading,
 .services .services-info .service .service-card .service-back .service-back-heading {
 	font-size: 2.5rem;
 	text-transform: capitalize;
+	color: black;
 }
 .services .services-info .service:hover .service-card {
 	transform: rotateY(180deg);
@@ -296,24 +297,9 @@ html {
 	font-size: 1.3rem;
 	margin-top: 10px;
 	text-align: center;
+	color: black;
 }
-.services .services-info .service:nth-child(2) .service-card .service-front {
-	background-image: url(./images/Bais-Code.jpg);
-	background-size: cover;
-	position: relative;
-	color: white;
-}
-.services .services-info .service:nth-child(2) .service-card .service-front::after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	background-color: rgba(0, 0, 0, 0.274);
-	z-index: -1;
-}
-.services .services-info .service:nth-child(2) .service-card .service-front i {
+.services .services-info .service .service-card .service-front .service-front-heading{
 	color: white;
 }
 .hire {
@@ -369,6 +355,17 @@ html {
 	padding-top: 10px;
 	letter-spacing: .2rem;
 }
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .social-icons li img {
+    width: 50px;
+    height: 50px;
+  }
 /* End Footer section  */
 
 /* Media query for desktop and tab  */
